@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestros Argentinos - Cursos de arte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #fafafa;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.8) 100%), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1d3d91e0-fc2e-466f-83f6-b32e39b07568.png') no-repeat center center;
+            background-size: cover;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .testimonial-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/acd5dd76-cff9-4674-b195-77bb16fc3120.png" alt="Logo de Maestros Argentinos - Paleta de pintor con colores vibrantes" class="w-10 h-10 rounded-full">
+                <h1 class="text-2xl font-bold text-gray-800">Maestros Argentinos</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-700 hover:text-indigo-600 transition">Inicio</a>
+                <a href="#cursos" class="text-gray-700 hover:text-indigo-600 transition">Cursos</a>
+                <a href="#nosotros" class="text-gray-700 hover:text-indigo-600 transition">Nosotros</a>
+                <a href="#testimonios" class="text-gray-700 hover:text-indigo-600 transition">Testimonios</a>
+                <a href="#contacto" class="text-gray-700 hover:text-indigo-600 transition">Contacto</a>
+            </nav>
+            <button class="md:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 text-gray-800">Descubre el artista que llevas dentro</h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-600 max-w-2xl mx-auto">Clases de arte online con los mejores maestros de Argentina</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#cursos" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-medium transition shadow-md">Explorar cursos</a>
+                <a href="#contacto" class="border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-8 py-3 rounded-lg font-medium transition">Contactanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section id="cursos" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestros Cursos Destacados</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Aprende de maestros con décadas de experiencia en el mundo del arte</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course 1 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8185e830-bed0-41e6-b856-e4fa52109f1c.png" alt="Pintura al óleo de un paisaje pampeano con cielos dramáticos" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-medium">Popular</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Pintura al Óleo</h3>
+                        <p class="text-gray-600 mb-4">Técnicas clásicas y contemporáneas con el maestro Juan Pérez</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-indigo-600">8 semanas</span>
+                            <button class="bg-indigo-50 text-indigo-600 px-4 py-2 rounded-lg font-medium hover:bg-indigo-100 transition">Saber más</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/05a9cfd1-0056-4cee-a7c3-06a6f0d13354.png" alt="Escultura abstracta en bronce con formas fluidas" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Escultura Moderna</h3>
+                        <p class="text-gray-600 mb-4">De la idea a la forma con la artista María González</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-indigo-600">12 semanas</span>
+                            <button class="bg-indigo-50 text-indigo-600 px-4 py-2 rounded-lg font-medium hover:bg-indigo-100 transition">Saber más</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/627b10be-67b4-4af7-bf02-66d75504b077.png" alt="Acuarela de un patio colonial con macetas y plantas" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-medium">Nuevo</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Acuarela Argentina</h3>
+                        <p class="text-gray-600 mb-4">Captura la luz y los colores de nuestros paisajes</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-indigo-600">6 semanas</span>
+                            <button class="bg-indigo-50 text-indigo-600 px-4 py-2 rounded-lg font-medium hover:bg-indigo-100 transition">Saber más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-lg font-medium transition">Ver todos los cursos &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a788fed3-c023-41ca-8593-9ecb2aaccfea.png" alt="Grupo diverso de artistas trabajando en un taller luminoso" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Nuestra Filosofía</h2>
+                    <p class="text-gray-600 mb-4">Maestros Argentinos nació de la pasión por compartir el conocimiento artístico que ha sido cultivado por generaciones en nuestro país.</p>
+                    <p class="text-gray-600 mb-6">Creemos en el arte como herramienta de expresión personal y transformación social. Nuestros maestros son reconocidos artistas con amplia trayectoria tanto en creación como en docencia.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h3 class="font-bold mb-2">+2000</h3>
+                            <p class="text-gray-600 text-sm">Estudiantes satisfechos</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h3 class="font-bold mb-2">20+</h3>
+                            <p class="text-gray-600 text-sm">Maestros especializados</p>
+                        </div>
+                    </div>
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">Conoce a nuestros maestros</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonios" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Lo que dicen nuestros estudiantes</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Experiencias reales de personas que transformaron su relación con el arte</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c5cf969c-3d57-46dc-8676-521178b2d3f9.png" alt="Retrato de mujer sonriente con pelo castaño" class="testimonial-img rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Lucía M.</h4>
+                            <div class="flex text-yellow-400">
+                                ★ ★ ★ ★ ★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"El curso de acuarela superó todas mis expectativas. El método de enseñanza es claro y los materiales proporcionados son de excelente calidad."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/37d093d2-c2a0-440b-b956-28d08c7c7d74.png" alt="Retrato de hombre mayor con barba blanca" class="testimonial-img rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Carlos R.</h4>
+                            <div class="flex text-yellow-400">
+                                ★ ★ ★ ★ ★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Después de jubilarme quería explorar mi lado artístico. Los maestros tienen una paciencia infinita y saben adaptarse a cada nivel."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/857616d4-350f-411c-a257-016dc74d44f6.png" alt="Retrato de joven con gafas y pelo corto" class="testimonial-img rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Martín S.</h4>
+                            <div class="flex text-yellow-400">
+                                ★ ★ ★ ★ ★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Como profesional del diseño, estos cursos me han dado herramientas técnicas y conceptuales que aplico diariamente en mi trabajo."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-indigo-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center bg-white rounded-lg p-8 shadow-sm">
+                <h2 class="text-3xl font-bold mb-4">¿Listo para comenzar tu viaje artístico?</h2>
+                <p class="text-gray-600 mb-6">Suscríbete para recibir información sobre nuevos cursos, descuentos exclusivos y contenido educativo.</p>
+                <form class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Tu correo electrónico" class="flex-grow px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md whitespace-nowrap">Suscribirme</button>
+                </form>
+                <p class="text-xs text-gray-500 mt-4">Respetamos tu privacidad. Nunca compartiremos tu información.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f3d56f5e-8841-4330-bbd9-576583913600.png" alt="Logo de Maestros Argentinos en versión monocromática" class="w-10 h-10 rounded-full">
+                        <h2 class="text-xl font-bold">Maestros Argentinos</h2>
+                    </div>
+                    <p class="text-gray-400 mb-4">La plataforma líder en educación artística en línea de Argentina.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Cursos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Todos los cursos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Pintura</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Escultura</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Dibujo</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Grabado</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <span class="text-gray-400">+54 11 1234-5678</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <span class="text-gray-400">info@maestrosargentinos.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span class="text-gray-400">Av. del Arte 1234, Buenos Aires</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 Maestros Argentinos. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden" id="mobileMenu">
+        <div class="flex justify-end p-6">
+            <button id="closeMenuBtn" class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full p-6">
+            <nav class="flex flex-col space-y-8 text-center">
+                <a href="#" class="text-2xl text-white hover:text-indigo-300 transition">Inicio</a>
+                <a href="#cursos" class="text-2xl text-white hover:text-indigo-300 transition">Cursos</a>
+                <a href="#nosotros" class="text-2xl text-white hover:text-indigo-300 transition">Nosotros</a>
+                <a href="#testimonios" class="text-2xl text-white hover:text-indigo-300 transition">Testimonios</a>
+                <a href="#contacto" class="text-2xl text-white hover:text-indigo-300 transition">Contacto</a>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('header button');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const closeMenuBtn = document.getElementById('closeMenuBtn');
+            
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.remove('hidden');
+            });
+            
+            closeMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    mobileMenu.classList.add('hidden');
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Course buttons functionality
+            document.querySelectorAll('.course-card button').forEach(button => {
+                button.addEventListener('click', function() {
+                    alert('Más información sobre este curso disponible próximamente.');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
